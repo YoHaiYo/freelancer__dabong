@@ -434,13 +434,13 @@
 					<div class="info">
 						<div class="float-left">
 							<div class="company-info">
-								<p>핫팩 제조 공장 : 충청북도 음성군 대소면 초금로 169-13</p>
-								<p>영업본부 : 서울특별시 영등폭두 여의나루로 71 (동화빌딩) 404</p>
-								<p>대표번호 : 1800-8994</p>
+								<p style="color: white;">핫팩 제조 공장 : 충청북도 음성군 대소면 초금로 169-13</p>
+								<p style="color: white;">영업본부 : 서울특별시 영등폭두 여의나루로 71 (동화빌딩) 404</p>
+								<p style="color: white;">대표번호 : 1800-8994</p>
 							</div>
 							<div class="copyright">
 								COPYRIGHT ©
-								<strong>DaBong</strong>
+								<strong style="color: white;">DaBong</strong>
 								ALL RIGHTS RESERVED.
 							</div>
 						</div>
