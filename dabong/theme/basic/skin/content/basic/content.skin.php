@@ -8,7 +8,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 <article id="ctt" class="ctt_<?php echo $co_id; ?>">
     <header>
         <h1><?php echo $g5['title']; ?></h1>
-        <div class="flex justify-content-center">
+        <div class="d-flex justify-content-center">
             <div class="under-line"></div>
         </div>
     </header>
