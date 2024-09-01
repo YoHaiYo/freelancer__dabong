@@ -434,21 +434,17 @@
 					<div class="info">
 						<div class="float-left">
 							<div class="company-info">
-								본사 : 충북 음성군 대소면 대금로 196번길 17-12, 17-9   TEL : <a href="tel:043-535-7161">043-535-7161</a><br>
-								CIR센터 : 경기도 성남시 분당구 판교로 331 ABN타워 6층 / 판교로 323 벤처포럼벤처타워 6층  TEL : <a href="tel:031-784-6400">031-784-6400</a><br>
-								마케팅센터 : 경기도 성남시 분당구 판교로 323 벤처포럼벤처타워 7층  TEL : <a href="tel:031-784-6500">031-784-6500</a>
+								<p>핫팩 제조 공장 : 충청북도 음성군 대소면 초금로 169-13</p>
+								<p>영업본부 : 서울특별시 영등폭두 여의나루로 71 (동화빌딩) 404</p>
+								<p>대표번호 : 1800-8994</p>
 							</div>
 							<div class="copyright">
-																COPYRIGHT
-								©
-								<strong>COSMECCA KOREA</strong>
+								COPYRIGHT ©
+								<strong>DaBong</strong>
 								ALL RIGHTS RESERVED.
-															</div>
+							</div>
 						</div>
-												<div class="float-right">
-							<div class="logo"><img src="/dabong/2024/img/foot_logo.png" class="img-fluid"></div>
-						</div>
-											</div>
+					</div>
 				</div>
 			</div>
 		</footer>		<!-- /footer content -->
