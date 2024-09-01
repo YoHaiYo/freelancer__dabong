@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+.schedule-box-ajax { position:relative;margin-bottom:20px;overflow:hidden;border: 1px solid #c6cacc;background:#fff }
+.schedule-box-ajax .lat_title {display:block;background:#fcfcfc;padding:0 20px;line-height:45px;font-size:1.083em;border-bottom:1px solid #e2e2e2;color:#253dbe;}
+.schedule-box-ajax .lat_title a{color:#253dbe;display:inline-block;position:relative}
+.schedule-box-ajax .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.schedule-box-ajax .lt_more:hover{color:#777}
+
+.schedule-box-ajax .list-today { border:1px solid #ddd; padding:15px; margin-bottom:20px; }
+.schedule-box-ajax .list-today .media-body ul{padding:0px}
+.schedule-box-ajax .list-today .media-body li {position:relative;line-height:18px;padding:3px 0;padding-right:50px;padding-left:10px;position:relative}
+.schedule-box-ajax .list-today .media-body li:before{position: absolute;top: 12px;left: 0px;width: 4px;height: 4px;background: #aaa;content: '';border-radius: 50%;}
+.schedule-box-ajax .list-today .media-body li a:hover{color:#a22121}
+
+.schedule-box-ajax .list-head { border-left:1px solid #ddd; border-right:1px solid #ddd; }
+.schedule-box-ajax .list-head > span { border-right:1px solid #ddd; }
+.schedule-box-ajax .list-head > span:last-child { border-right:0px; }
+
+.schedule-box-ajax .list-body { list-style:none; padding:0px; margin:0px; }
+.schedule-box-ajax .list-body > li { border-bottom:1px solid #ddd; border-right:1px solid #ddd; display:table; width:100%; table-layout:fixed; min-height:100px; }
+.schedule-box-ajax .list-body > li > div { display:table-cell; border-left:1px solid #ddd; width:14.285%; min-height:100px; line-height:22px; padding:10px; vertical-align:top; }
+.schedule-box-ajax .list-body .do-list ul{padding:0px}
+.schedule-box-ajax .list-body .do-list li {position:relative;line-height:15px;padding:3px 0px;position:relative}
+.schedule-box-ajax .list-body .do-list li a:hover{color:#a22121}
+.schedule-box-ajax .list-body .bg-today { background:#fafafa; }
+
+.schedule-box-ajax .div-head { display:table; width:100%; table-layout:fixed; padding:15px 0; border-top-width:2px; border-top-style:solid; border-bottom:1px solid #c3c3c3; border-collapse:separate;}
+.schedule-box-ajax .div-head > span { display:table-cell; text-align:center; vertical-align:middle; border-right:1px solid #ddd; font-weight:bold; line-height:1; }
+.schedule-box-ajax .div-head > span:last-child { border-right:0; }
+.schedule-box-ajax .div-head .list-head > span { border:0; }
+
+.schedule-box-ajax .date-box {width: 82px;text-align: center;}
+.schedule-box-ajax .date-box .date-item {padding: 8px 0 5px 0;}
+.schedule-box-ajax .date-box .date-item .date {display: block;line-height: 29px;font-size: 29px;font-weight: bold;}
+.schedule-box-ajax .date-box .date-icon {margin-top:3px;background-color: #eef0f2;}
+.schedule-box-ajax .date-box .date-icon i {display: block;line-height: 55px;font-size: 30px;}
+
+.schedule-box-ajax .media,.schedule-box-ajax .media-body {overflow: hidden;zoom: 1;}
+.schedule-box-ajax .media,.schedule-box-ajax .media .media {margin-top: 15px;}
+.schedule-box-ajax .media:first-child {margin-top: 0;}
+.schedule-box-ajax .media > .pull-left {margin-right: 10px;}
+.schedule-box-ajax .media > .pull-right {margin-left: 10px;}
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+/* Size ------------------------------------------------------ */
+.font-8, i.font-8 { 
+	font-size: 8px; 
+}
+.font-9, i.font-9 { 
+	font-size: 9px; 
+}
+.font-10, i.font-10 { 
+	font-size: 10px; 
+}
+.font-11, i.font-11 { 
+	font-size: 11px; 
+}
+.font-12, i.font-12 { 
+	font-size: 12px; 
+}
+.font-13, i.font-13 { 
+	font-size: 13px; 
+}
+.font-14, i.font-14 { 
+	font-size: 14px; 
+}
+.font-16, i.font-16 { 
+	font-size: 16px; 
+}
+
+/* Color ------------------------------------------------------ */
+.red, i.red { 
+	color: rgb(233, 27, 35);
+}
+.orangered, i.orangered { 
+	color: orangered; 
+}
+.orange, i.orange { 
+	color: rgb(240, 150, 20);
+}
+.blue, i.blue { 
+	color: rgb(52, 152, 219); 
+}
+
+/* Background Color ------------------------------------------------------ */
+.bg-red, i.bg-red, .badge.bg-red { 
+	background-color: rgb(233, 27, 35);
+	color: #fff; 
+}
+.bg-orangered, i.bg-orangered, .badge.bg-orangered { 
+	background-color: orangered; 
+	color: #fff; 
+}
+.bg-orange, i.bg-orange, .badge.bg-orange { 
+	background-color: rgb(240, 150, 20);
+	color: #fff; 
+}
