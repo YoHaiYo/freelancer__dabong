@@ -22,18 +22,23 @@
 
 		<title><?php echo $g5_head_title; ?></title>
 
+		<!-- 플러그인-css-->
 		<link href="/dabong/2024/css/notosans-cjk.css" rel="stylesheet">
 		<link rel="stylesheet" href="/dabong/2024/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/dabong/2024/css/bootstrap-select.min.css">
 		<link rel="stylesheet" href="/dabong/2024/css/font-awesome.min.css">
+		<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+		<!-- 플러그인-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<!-- CSS Files -->
 		<link href="/dabong/2024/css/counter.css" rel="stylesheet">
 		<link href="/dabong/2024/css/prettify.css" rel="stylesheet">
 		<link href="/dabong/2024/css/slick-theme.css" rel="stylesheet">
 		<link href="/dabong/2024/css/slick.css" rel="stylesheet">
-
-
-
+		<!-- 메인 css -->
 		<link href="<?php echo G5_THEME_CSS_URL; ?>/default.css" rel="stylesheet">
 		<link href="/dabong/2024/css/common.css" rel="stylesheet">
 		<?php

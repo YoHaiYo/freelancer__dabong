@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <head>
+    <!-- <link
+      rel="stylesheet"
+      href="http://da-bong.com/wp-content/themes/blaize/js/owl/owl.carousel.min.css?ver=5.9.10"
+    /> -->
+    <!-- <script src="http://da-bong.com/wp-content/themes/blaize/js/owl/owl.carousel.min.js?ver=5.9.10"></script> -->
+    <style>
+      .blz-partners-slider img {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+
+      .blz-partners-slider img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="blz-partners-section home-section clearfix">
+      <div class="blz-container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Partners</h2>
+        </div>
+
+        <div class="blz-partners-slider owl-carousel clearfix">
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/한미약품.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/롯데.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/lg생활건강.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/텐바이텐.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/mhco.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/평창.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/우체국.jpg"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                class="wow zoomInUp animated"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/부광약품.jpg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const owlCarousel = document.querySelector(".blz-partners-slider");
+
+        if (owlCarousel) {
+          const owlItems = Array.from(owlCarousel.children); // NodeList를 배열로 변환
+          const itemMargin = 15;
+          let currentIndex = 0;
+          const totalItems = owlItems.length;
+
+          function updateCarousel() {
+            const offset = -(
+              currentIndex *
+              (owlItems[0].offsetWidth + itemMargin)
+            );
+            owlCarousel.style.transform = `translate3d(${offset}px, 0, 0)`;
+            owlCarousel.style.transition = "transform 0.25s ease";
+          }
+
+          function nextSlide() {
+            currentIndex++;
+
+            if (currentIndex >= totalItems) {
+              const firstItem = owlItems.shift(); // 첫 번째 아이템을 배열에서 제거
+              owlCarousel.appendChild(firstItem); // 제거된 아이템을 맨 뒤에 추가
+              owlItems.push(firstItem); // 배열에도 맨 뒤에 추가
+              currentIndex = totalItems - 1; // currentIndex를 마지막 아이템으로 설정
+              owlCarousel.style.transition = "none";
+              updateCarousel(); // 즉시 위치 업데이트
+              setTimeout(() => {
+                owlCarousel.style.transition = "transform 0.25s ease";
+                currentIndex = totalItems - 2;
+                updateCarousel();
+              }, 0);
+            } else {
+              updateCarousel();
+            }
+          }
+
+          function prevSlide() {
+            currentIndex--;
+
+            if (currentIndex < 0) {
+              const lastItem = owlItems.pop(); // 마지막 아이템을 배열에서 제거
+              owlCarousel.insertBefore(lastItem, owlItems[0]); // 제거된 아이템을 맨 앞에 추가
+              owlItems.unshift(lastItem); // 배열에도 맨 앞에 추가
+              currentIndex = 1; // currentIndex를 두 번째 아이템으로 설정
+              owlCarousel.style.transition = "none";
+              updateCarousel(); // 즉시 위치 업데이트
+              setTimeout(() => {
+                owlCarousel.style.transition = "transform 0.25s ease";
+                currentIndex = 0;
+                updateCarousel();
+              }, 0);
+            } else {
+              updateCarousel();
+            }
+          }
+
+          // Initialize carousel styles
+          owlCarousel.style.display = "flex";
+          updateCarousel();
+
+          // Auto-play functionality
+          let autoplay = setInterval(nextSlide, 3000);
+
+          // Pause on mouse enter, resume on mouse leave
+          owlCarousel.addEventListener("mouseenter", function () {
+            clearInterval(autoplay);
+          });
+
+          owlCarousel.addEventListener("mouseleave", function () {
+            autoplay = setInterval(nextSlide, 3000);
+          });
+
+          // Navigation buttons
+          const navPrev = document.querySelector(".owl-prev");
+          const navNext = document.querySelector(".owl-next");
+
+          if (navPrev && navNext) {
+            navPrev.addEventListener("click", prevSlide);
+            navNext.addEventListener("click", nextSlide);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

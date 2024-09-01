@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스와이퍼 변수값만 바꿔서 커스텀마이징</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+      #partners-section h2 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .partner-img {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+      .partner-img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="partners-section">
+      <h2>Partners</h2>
+      <!-- 자동롤링 / 센터모드 / 1.8걸침 / 좌우 / 2초마다 / 페이지네이션 / 앞뒤버튼 필요 -->
+      <div class="swiper" id="partnerSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/한미약품.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/롯데.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/lg생활건강.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/텐바이텐.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/mhco.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/평창.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/우체국.jpg"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img
+                class="partner-img"
+                data-wow-duration="2s"
+                src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/부광약품.jpg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const partnerSwiper = new Swiper("#partnerSwiper.swiper", {
+        // 자동롤링 2초마다
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        // 센터모드
+        centeredSlides: true,
+        // 루프반복
+        loop: true,
+        // 슬라이드 개수
+        slidesPerView: 5,
+      });
+    </script>
+  </body>
+</html>
