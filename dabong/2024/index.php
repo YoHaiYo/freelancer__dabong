@@ -278,7 +278,7 @@ include_once("./layout/top.php");
   <!-- End Carousel Card -->
 </div>
 <!-- Start : counting 애니메이션 -->
-    <section class="section-wrap counters bg-color">
+    <section id="counting-animation" class="section-wrap counters bg-color">
       <div class="container">
         <div class="row">
           <div class="col-sm-3 col-xs-6 mb-40">
@@ -345,7 +345,21 @@ include_once("./layout/top.php");
           });
         }
 
-        countingAnimation();
+        // 특정 ID를 가진 태그에 대해 IntersectionObserver 설정
+        const targetElement = document.getElementById('counting-animation'); // counting-animation를 원하는 ID로 교체
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              countingAnimation();
+              observer.disconnect(); // 애니메이션 실행 후 옵저버 해제
+            }
+          });
+        });
+
+        // 타겟 엘리먼트를 관찰 시작
+        observer.observe(targetElement);
+
     </script>
  <!-- End : counting 애니메이션 -->
 
