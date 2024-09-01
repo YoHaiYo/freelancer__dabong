@@ -278,42 +278,51 @@ include_once("./layout/top.php");
   <!-- End Carousel Card -->
 </div>
 <!-- Start : counting 애니메이션 -->
+ <style>
+  #counting-animation {
+    background: url(http://da-bong.com/wp-content/uploads/2020/03/counter_back_myhot.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.statistic-timer {
+  font-size: 36px !important;
+}
+ </style>
     <section id="counting-animation" class="section-wrap counters bg-color">
       <div class="container">
         <div class="row">
           <div class="col-sm-3 col-xs-6 mb-40">
             <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="968"
-                >968</span
+              <span class="statistic-timer" data-from="0" data-to="1124213226"
+                >1124213226</span
               >
-              <h5 class="counter-text">Review</h5>
+              <h5 class="counter-text">핫팩누적판매량</h5>
             </div>
           </div>
 
           <div class="col-sm-3 col-xs-6 mb-40">
             <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="357"
-                >357</span
+              <span class="statistic-timer" data-from="0" data-to="50600467"
+                >50600467</span
               >
-              <h5 class="counter-text">Happy Clients</h5>
+              <h5 class="counter-text">전년생산량(2022)</h5>
             </div>
           </div>
 
           <div class="col-sm-3 col-xs-6 mb-40">
             <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="813"
-                >813</span
+              <span class="statistic-timer" data-from="0" data-to="1981"
+                >1981</span
               >
-              <h5 class="counter-text">Marketing Goals</h5>
+              <h5 class="counter-text">설립연도</h5>
             </div>
           </div>
 
           <div class="col-sm-3 col-xs-6 mb-40">
             <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="972"
-                >972</span
+              <span class="statistic-timer" data-from="0" data-to="42"
+                >42</span
               >
-              <h5 class="counter-text">Awesome Ideas</h5>
+              <h5 class="counter-text">업력(년)</h5>
             </div>
           </div>
         </div>
