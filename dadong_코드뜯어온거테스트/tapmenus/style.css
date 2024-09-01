@@ -1,0 +1,47 @@
+.tabmenu {  width: 100%; margin-bottom:40px;  max-width: 100%;  border: 0px solid #000;}
+.tabmenu_menu {  display: flex;  flex-wrap: wrap;  border: 1px solid #dfdfdf;}
+/*.tabmenu_menu-item:first-child {border-left:1px solid #dfdfdf;}*/
+.tabmenu_menu-item:first-child {border-left:1px solid #dfdfdf;}
+.tabmenu_menu-item {  flex: 1;/* border-top:1px solid #dfdfdf;  border-right:1px solid #dfdfdf;  border-bottom:1px solid #dfdfdf;*/
+ border:4px solid #fff;  border-left:1px solid #dfdfdf;  padding: 10px;  font-size: 18px;  font-weight: 600;  letter-spacing: 0.8px;  text-transform: uppercase;
+  text-align: center;  color: #999;  box-shadow: 0 2px 0 transparent;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;
+     user-select: none;  cursor: pointer;  transition: 0.3s;}
+.tabmenu_content {  padding: 90px 0 0 0; width:1100px; margin:0 auto;}
+.tabmenu_content-item {  height: 0;  overflow: hidden;  line-height: 1.4;  opacity: 0;  transform: translateY(-20px);
+  visibility: hidden;  transition: 0.3s;}
+.tabmenu input[id=tab1]:checked ~ .tabmenu_menu .tabmenu_menu-item[for=tab1] {
+  /*background: #23408e;*/ border: 4px solid #111;  color: #333;   /*box-shadow: 0 2px 0 #000;*/}
+.tabmenu input[id=tab1]:checked ~ .tabmenu_content .tabmenu_content-item[data-tab=tab1] {
+  height: auto;  opacity: 1;  transform: translateY(0);  visibility: visible;}
+.tabmenu input[id=tab2]:checked ~ .tabmenu_menu .tabmenu_menu-item[for=tab2] {
+ border: 4px solid #111;  color: #333; }
+.tabmenu input[id=tab2]:checked ~ .tabmenu_content .tabmenu_content-item[data-tab=tab2] {
+  height: auto;  opacity: 1;  transform: translateY(0);  visibility: visible;}
+.tabmenu input[id=tab3]:checked ~ .tabmenu_menu .tabmenu_menu-item[for=tab3] {
+ border: 4px solid #111;  color: #333; }
+.tabmenu input[id=tab3]:checked ~ .tabmenu_content .tabmenu_content-item[data-tab=tab3] {
+  height: auto;  opacity: 1;  transform: translateY(0);  visibility: visible;}
+.tabmenu input[id=tab4]:checked ~ .tabmenu_menu .tabmenu_menu-item[for=tab4] {
+ border: 4px solid #111;  color: #333; }
+.tabmenu input[id=tab4]:checked ~ .tabmenu_content .tabmenu_content-item[data-tab=tab4] {
+  height: auto;  opacity: 1;  transform: translateY(0);  visibility: visible;}
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+.tabmenu_content {  padding: 30px 0 0 0; width:100%; }	
+.tabmenu_menu-item {  flex: 1 1 40%;   padding: 10px 1px;  font-size: 15px;  font-weight: 500;  letter-spacing: 0.8px;  text-transform: uppercase;
+  text-align: center;  color: #999; border-bottom:1px solid #dfdfdf; }
+.tabmenu input[id=tab1]:checked ~ .tabmenu_menu .tabmenu_menu-item[for=tab1] {
+ border: 3px solid #111;  color: #333;  }  
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

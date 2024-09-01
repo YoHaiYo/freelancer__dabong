@@ -29,6 +29,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     #ctt .under-line{
       border-bottom: 1px solid #999;
       width: 50px;
+      margin-bottom: 20px;
     }
     #ctt b{
         font-size: 1.5rem;
@@ -36,11 +37,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         line-height: 1.4em;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-family: 'Malgun Gothic', dotum, sans-serif;
     }
     #ctt span {
         font-size: 1.2rem;
         line-height: 1.2em;
         margin-top: 10px;
         margin-bottom: 10px;
+        font-family: 'Malgun Gothic', dotum, sans-serif;
     }
 </style>
