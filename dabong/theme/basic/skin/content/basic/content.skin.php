@@ -3,6 +3,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">', 0);
+
 ?>
 
 <article id="ctt" class="ctt_<?php echo $co_id; ?>">
@@ -16,356 +17,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div id="ctt_con" class='container'>
         <?php echo $str; ?>
 
-        <div class="tabmenu">
-      <input type="radio" id="tab1" name="tab" checked="" hidden="">
-      <input type="radio" id="tab2" name="tab" hidden="">
-      <input type="radio" id="tab3" name="tab" hidden="">
-      <input type="radio" id="tab4" name="tab" hidden="">
-      <div class="tabmenu_menu">
-        <label class="tabmenu_menu-item" for="tab1">2021~현재</label><!--tab1-->
-        <label class="tabmenu_menu-item" for="tab2">2016~2020</label><!--tab2-->
-        <label class="tabmenu_menu-item" for="tab3">2011~2015</label><!--tab3-->
-        <label class="tabmenu_menu-item" for="tab4">2008~2010</label><!--tab4-->
-      </div>
-
-      <div class="tabmenu_content">
-        <!--tab1 content-->
-        <div class="tabmenu_content-item" data-tab="tab1">
-          <div class="m-content">
-            <ul class="m-timeline">
-              <li>
-                <div class="m-timeline__date">2022<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>농촌진흥청 농업기상정보시스템
-                    유지보수(40개소)
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>원예연구소 사과시험장
-                    수액흐름 측정시스템 설치
-                  </li>
-                  <li>
-                    <span class="detailD">05</span>농업과학기술원 토양수분 및
-                    기상측정시스템 설치
-                  </li>
-                  <li>
-                    <span class="detailD">11</span>원예연구소 과수재배과
-                    자동기상측정시스템
-                  </li>
-                  <li>
-                    <span class="detailD">12</span>세븐힐즈 골프장
-                    자동기상측정시스템 설치
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2021<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>국립원예특장과학원 기상 및
-                    원격영상 전송시스템 6set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>강원,경기,충남,충북,경남,경북
-                    농업기술원 기온/습도/일사 측정시스템
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>경희대학교 기상관측시스템
-                    12set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>부여군 농업기상관측시스템
-                    4set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>각 도 농업기술원
-                    영상관측시스템 설치(8개 지역)
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>경기도 농업기술원 버섯연구소
-                    CO2제어 시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>익산 국립식량과학원
-                    하우스제어시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">05</span>대관령 암반대기
-                    기상관측시스템 2set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>영주, 문경 농업기술센터
-                    기상관측시스템 1set 설치
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--tab2 content-->
-        <div class="tabmenu_content-item" data-tab="tab2">
-          <div class="m-content">
-            <ul class="m-timeline">
-              <li>
-                <div class="m-timeline__date">2020<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>한국항공우주연구원
-                    Spectroradiometer 설치
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>강원,경기,충남,충북,경남,경북
-                    농업기술원 기온/습도/일사 측정시스템
-                  </li>
-                  <li>
-                    <span class="detailD">08</span>원예연구소 사과시험정
-                    서리예보시스템 설치
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>농촌진흥청 농업기상정보시스템
-                    유지보수(40개소)
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2019<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>경기도 농업기술원 버섯연구소
-                    CO2제어 시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>익산 국립식량과학원
-                    하우스제어시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">05</span>대관령 암반대기
-                    기상관측시스템 2set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>영주, 문경 농업기술센터
-                    기상관측시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">10</span>조기경보 시스템 기상관측장비
-                    15set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">11</span>통가(Tonga) 기상관측시스템
-                    1set 설치/중국 연변 기상관측시스템 1set 설치
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2018<span></span></div>
-                <ul class="detail">
-                  <li><span class="detailD">01</span>삼성 냉열기 사업시작</li>
-                  <li><span class="detailD">03</span>에어뱅크 사명 변경</li>
-                  <li><span class="detailD">04</span>삼성 대리점 인가</li>
-                  <li>
-                    <span class="detailD">04</span>삼성전자 시스템 기술점 획득
-                  </li>
-                  <li><span class="detailD">04</span>자체 물류 시스템 운영</li>
-                  <li>
-                    <span class="detailD">06</span>시스템 에어컨 설치 품질
-                    우수상 수상
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--tab3 content-->
-        <div class="tabmenu_content-item news" data-tab="tab3">
-          <div class="m-content">
-            <ul class="m-timeline">
-              <li>
-                <div class="m-timeline__date">2015<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>강소기업 획득(고용노동부)
-                  </li>
-                  <li>
-                    <span class="detailD">02</span>삼성전자 B2B 영업팀 3STAR
-                    파트너 인증(비즈니스 우수 판매점)
-                  </li>
-                  <li>
-                    <span class="detailD">02</span>삼성전자 파트너사
-                    장기경영상(20년) 수상
-                  </li>
-                  <li>
-                    <span class="detailD">02</span>삼성전자 Best 디지털마케팅상
-                    수상
-                  </li>
-                  <li>
-                    <span class="detailD">10</span>삼성전자 B2B 영업팀 4STAR
-                    파트너 인증(비즈니스 우수 판매점)
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2014<span></span></div>
-                <ul class="detail">
-                  <li><span class="detailD">01</span>삼성 냉열기 사업시작</li>
-                  <li><span class="detailD">03</span>에어뱅크 사명 변경</li>
-                  <li><span class="detailD">04</span>삼성 대리점 인가</li>
-                  <li>
-                    <span class="detailD">04</span>삼성전자 시스템 기술점 획득
-                  </li>
-                  <li><span class="detailD">04</span>자체 물류 시스템 운영</li>
-                  <li>
-                    <span class="detailD">06</span>시스템 에어컨 설치 품질
-                    우수상 수상
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2013<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">02</span>시스템 에어컨 설치 품질
-                    우수상 수상
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>주식회사 에어뱅크
-                    설립(포괄승계)
-                  </li>
-                  <li>
-                    <span class="detailD">08</span>삼성전자 시스템 에어컨 대리점
-                    cs 우수상 수상
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>건설업 진출(설비단종면허
-                    취득)
-                  </li>
-                  <li>
-                    <span class="detailD">11</span>지열공사업 등록(신재생에너지
-                    전문기업)
-                  </li>
-                  <li>
-                    <span class="detailD">11</span>삼성전자 시스템 에어컨 대리점
-                    cs 우수상 수상
-                  </li>
-                  <li>
-                    <span class="detailD">12</span>시스템에어컨 설치 부분 우수상
-                    수상
-                  </li>
-                  <li><span class="detailD">12</span>물류 센터 매입(지곡동)</li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2012<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>삼성전자 B2B 영업팀 STAR
-                    파트너 인증(비즈니스 우수 판매점)
-                  </li>
-                  <li>
-                    <span class="detailD">01</span>삼성전자 B2B 영업팀 2STAR
-                    파트너 인증(비즈니스 우수 판매점)
-                  </li>
-                  <li>
-                    <span class="detailD">08</span>한국전력 경기지역본부 감사패
-                    수상
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>주식회사 에어뱅크 사옥 매입
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>삼성전자 B2B 영업팀 3STAR
-                    파트너 인증(비즈니스 우수
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>삼성 시스템 에어컨 유지관리
-                    사업
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--tab4 content-->
-        <div class="tabmenu_content-item news" data-tab="tab4">
-          <div class="m-content">
-            <ul class="m-timeline">
-              <li>
-                <div class="m-timeline__date">2010<span></span></div>
-                <ul class="detail">
-                  <li><span class="detailD">01</span>삼성 냉열기 사업시작</li>
-                  <li><span class="detailD">03</span>에어뱅크 사명 변경</li>
-                  <li><span class="detailD">04</span>삼성 대리점 인가</li>
-                  <li>
-                    <span class="detailD">04</span>삼성전자 시스템 기술점 획득
-                  </li>
-                  <li><span class="detailD">04</span>자체 물류 시스템 운영</li>
-                  <li>
-                    <span class="detailD">06</span>시스템 에어컨 설치 품질
-                    우수상 수상
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2009<span></span></div>
-                <ul class="detail">
-                  <li>
-                    <span class="detailD">01</span>경기도 농업기술원 버섯연구소
-                    CO2제어 시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">03</span>익산 국립식량과학원
-                    하우스제어시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">05</span>대관령 암반대기
-                    기상관측시스템 2set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">09</span>영주, 문경 농업기술센터
-                    기상관측시스템 1set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">10</span>조기경보 시스템 기상관측장비
-                    15set 설치
-                  </li>
-                  <li>
-                    <span class="detailD">11</span>통가(Tonga) 기상관측시스템
-                    1set 설치/중국 연변 기상관측시스템 1set 설치
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <div class="m-timeline__date">2008<span></span></div>
-                <ul class="detail">
-                  <li><span class="detailD">01</span>삼성 냉열기 사업시작</li>
-                  <li><span class="detailD">03</span>에어뱅크 사명 변경</li>
-                  <li><span class="detailD">04</span>삼성 대리점 인가</li>
-                  <li>
-                    <span class="detailD">04</span>삼성전자 시스템 기술점 획득
-                  </li>
-                  <li><span class="detailD">04</span>자체 물류 시스템 운영</li>
-                  <li>
-                    <span class="detailD">06</span>시스템 에어컨 설치 품질
-                    우수상 수상
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
+      
 
 </article>
 <style>
@@ -403,3 +55,89 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         display: block;
     }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // #ctt_con 요소를 가져옵니다.
+    const cttCon = document.querySelector('#ctt_con');
+    
+    // .ctt_history 내부의 모든 태그를 가져옵니다.
+    const elements = document.querySelectorAll('.ctt_history *');
+    
+    // .tabmenu_menu를 동적으로 생성합니다.
+    const tabMenuContainer = document.createElement('div');
+    tabMenuContainer.className = 'tabmenu_menu';
+
+    // .history__list를 동적으로 생성합니다.
+    const historyListContainer = document.createElement('div');
+    historyListContainer.className = 'history__list';
+
+    // 추출된 텍스트들을 담을 Set을 만듭니다.
+    const uniqueTexts = new Set();
+
+    elements.forEach(function(element) {
+        // 태그의 텍스트 내용에서 {%와 %} 사이의 텍스트를 추출하기 위한 정규식을 사용합니다.
+        const matches = element.textContent.match(/\{\%(.*?)\%\}/g);
+
+        if (matches) {
+            matches.forEach(function(match) {
+                // {%와 %}를 제거하고 텍스트만 추출합니다.
+                const text = match.replace(/\{\%|\%\}/g, '');
+                
+                // |로 구분된 두 부분을 추출합니다.
+                const parts = text.split('|');
+
+                if (parts.length === 2) {
+                    // 유일한 텍스트만을 처리합니다.
+                    uniqueTexts.add(parts[0].trim());
+                    
+                    // .history__list 내에 추가할 div를 생성합니다.
+                    const classA = document.createElement('div');
+                    classA.className = 'tab__class_a';
+                    const pA = document.createElement('p');
+                    pA.textContent = parts[0].trim();
+                    classA.appendChild(pA);
+                    
+                    const classB = document.createElement('div');
+                    classB.className = 'tab__class_b';
+                    const pB = document.createElement('p');
+                    pB.textContent = parts[1].trim();
+                    classB.appendChild(pB);
+                    
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'history__item';
+                    historyItem.appendChild(classA);
+                    historyItem.appendChild(classB);
+
+                    // .history__list 컨테이너에 추가합니다.
+                    historyListContainer.appendChild(historyItem);
+                }
+            });
+        }
+    });
+
+    // 추출된 유일한 텍스트들을 기반으로 label 요소를 생성합니다.
+    let tabIndex = 1;
+    uniqueTexts.forEach(function(text) {
+        // 새로운 label 요소를 생성합니다.
+        const newLabel = document.createElement('label');
+        
+        // label의 클래스와 for 속성을 설정합니다.
+        newLabel.className = 'tabmenu_menu-item';
+        newLabel.setAttribute('for', `tab${tabIndex}`);
+
+        // label의 내용을 추출된 텍스트로 설정합니다.
+        newLabel.innerHTML = text;
+
+        // 생성된 label을 .tabmenu_menu 컨테이너에 추가합니다.
+        tabMenuContainer.appendChild(newLabel);
+
+        // 인덱스를 증가시킵니다.
+        tabIndex++;
+    });
+
+    // 생성된 .tabmenu_menu와 .history__list를 #ctt_con에 추가합니다.
+    cttCon.appendChild(tabMenuContainer);
+    cttCon.appendChild(historyListContainer);
+});
+
+</script>
