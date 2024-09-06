@@ -207,106 +207,40 @@ include_once("./layout/top.php");
   <!-- End Carousel Card -->
 </div>
 <!-- Start : counting 애니메이션 -->
- <style>
-  
-.statistic-timer {
-  font-size: 36px !important;
-}
- </style>
-    <section id="counting-animation" class="section-wrap counters bg-color">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-xs-6 my-3">
-            <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="1124213226"
-                >1124213226</span
-              >
-              <h5 class="counter-text">누적판매량</h5>
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6 my-3">
-            <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="50600467"
-                >50600467</span
-              >
-              <h5 class="counter-text">전년생산량(2022)</h5>
-              <!--세훈씨, 여기 2022 전년도만 자동화 부탁해요-->
-            </div>
-          </div>
-
-          <!-- <div class="col-sm-3 col-xs-6 my-3">
-            <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="1981"
-                >1981</span
-              >
-              <h5 class="counter-text">설립연도</h5>
-            </div>
-          </div> -->
-
-          <div class="col-sm-3 col-xs-6 my-3">
-            <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="42"
-                >42</span
-              >
-              <!--세훈씨, 여기 1981년도 에서 계산된 자동화 부탁해요-->
-              <h5 class="counter-text">업력(년)</h5>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6 my-3">
-            <div class="statistic text-center">
-              <span class="statistic-timer" data-from="0" data-to="928"
-                >928</span
-              >
-              <!--세훈씨, 여기 1981년도 에서 계산된 자동화 부탁해요-->
-              <h5 class="counter-text">다봉과 함께 한 고객사</h5>
-            </div>
-          </div>
+<section id="counting-animation" class="section-wrap counters bg-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-6 my-3">
+        <div class="statistic text-center">
+          <span class="statistic-timer" data-from="0" data-to="1124213226">1124213226</span>
+          <h5 class="counter-text">누적판매량</h5>
         </div>
       </div>
-    </section>
-    <script>
-       const statisticTimers = document.querySelectorAll(".statistic-timer");
 
-        function countingAnimation() {
-          statisticTimers.forEach((timer) => {
-            const dataFrom = parseInt(timer.dataset.from, 10); // Get the starting value
-            const dataTo = parseInt(timer.dataset.to, 10); // Get the target value
-            const duration = 2000; // Adjust duration (in milliseconds) for animation speed
+      <div class="col-sm-3 col-xs-6 my-3">
+        <div class="statistic text-center">
+          <span class="statistic-timer" data-from="0" data-to="50600467">50600467</span>
+          <h5 class="counter-text">전년생산량(<span id="current-year"></span>)</h5>
+        </div>
+      </div>
 
-            let currentCount = dataFrom;
-            const increment = (dataTo - dataFrom) / (duration / 16); // Calculate increment per frame
+      <div class="col-sm-3 col-xs-6 my-3">
+        <div class="statistic text-center">
+          <span class="statistic-timer" data-from="0" data-to="" id="years-count"></span>
+          <h5 class="counter-text">업력(년)</h5>
+        </div>
+      </div>
 
-            const animate = () => {
-              currentCount += increment;
+      <div class="col-sm-3 col-xs-6 my-3">
+        <div class="statistic text-center">
+          <span class="statistic-timer" data-from="0" data-to="928">928</span>
+          <h5 class="counter-text">다봉과 함께 한 고객사</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-              timer.textContent = Math.floor(currentCount); // Update displayed value
-
-              if (currentCount < dataTo) {
-                requestAnimationFrame(animate);
-              }
-            };
-
-            animate();
-          });
-        }
-
-        // 특정 ID를 가진 태그에 대해 IntersectionObserver 설정
-        const targetElement = document.getElementById('counting-animation'); // counting-animation를 원하는 ID로 교체
-
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              countingAnimation();
-              observer.disconnect(); // 애니메이션 실행 후 옵저버 해제
-            }
-          });
-        });
-
-        // 타겟 엘리먼트를 관찰 시작
-        observer.observe(targetElement);
-
-    </script>
  <!-- End : counting 애니메이션 -->
 
  <!-- Start : grid menu -->

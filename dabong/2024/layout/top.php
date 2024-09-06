@@ -40,6 +40,8 @@
 		<link href="/dabong/2024/css/slick-theme.css" rel="stylesheet">
 		<link href="/dabong/2024/css/slick.css" rel="stylesheet">
 
+		<link href="/dabong/2024/css/counting-animation.css" rel="stylesheet">
+
 
 		<!-- 테마-베이직 -->
 		<link href="/dabong/2024/css/themeBasic_content__history.css" rel="stylesheet">
