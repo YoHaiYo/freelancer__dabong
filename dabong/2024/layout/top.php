@@ -176,7 +176,7 @@ if(isset($fm_id)){
             </ul>
 				
 				</div>
-				<div class="banner-right" >
+				<!-- <div class="banner-right" >
 					<a href="javascript:void(0);" class="brief-popup">
 						<h5>cosmecca brief</h5>
 						<div class="con">
@@ -186,7 +186,7 @@ if(isset($fm_id)){
 						알아보세요
 						</div>
 					</a>
-				</div>
+				</div> -->
 							</div>
 		</div>
 	</div>
@@ -247,7 +247,7 @@ if(isset($fm_id)){
 						</div>
 						<a href="/ko/system#dev-consulting" class="btn-round">개발상담 문의</a>
 					</div>
-					<div class="banner-right">
+					<!-- <div class="banner-right">
 						<a href="javascript:void(0);" class="brief-popup">
 							<h5>cosmecca brief</h5>
 							<div class="con">
@@ -257,7 +257,7 @@ if(isset($fm_id)){
 							알아보세요
 							</div>
 						</a>
-					</div>
+					</div> -->
 				</div>
 							</div>
 					</div>

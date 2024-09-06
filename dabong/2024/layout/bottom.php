@@ -468,7 +468,7 @@
 		<script src="/dabong/2024/js/jquery-dateformat.min.js"></script>
 
 		<!--	 Common Files	 -->
-		<script src="/dabong/2024/js/common.js"></script>	
+		<script src="/dabong/2024/js/common_v1.js"></script>	
 <!-- Page Script Area ( s ) -->
 <script>
 	$(function(){
