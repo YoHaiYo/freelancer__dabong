@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+.noto-serif-kr-extralight {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-light {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-regular {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-medium {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-semibold {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-bold {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .noto-serif-kr-black {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  

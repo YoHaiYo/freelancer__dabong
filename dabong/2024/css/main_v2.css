@@ -37,11 +37,11 @@
 }
 
 .main .carousel-control .carousel-control-prev {
-  background-image: url(/dabong/2024/img/main/btn_visual_left.png);
+  background-image: url(/dabong/2024/svg/prevsvg.svg);
 }
 
 .main .carousel-control .carousel-control-next {
-  background-image: url(/dabong/2024/img/main/btn_visual_right.png);
+  background-image: url(/dabong/2024/svg/nextsvg.svg);
 }
 
 .main .carousel-control .carousel-control-loading {
@@ -57,7 +57,7 @@
 .main .carousel-control .carousel-control-loading .line {
   width: 0;
   height: 100%;
-  background-color: #fff;
+  background-color: #EA5520;
   transition: all 0.1s ease-out;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
@@ -84,19 +84,20 @@
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateY(-50%);
-  background-image: url(/dabong/2024/img/main/visual_btn_right.png);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+ 
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .main .carousel-right-wrap .item {
   width: 148px;
   height: 89px;
   position: relative;
+  background-color: #60606050;
 }
 .main .carousel-right-wrap .item:first-child {
   /* ``ssh */
   /* background-color:rgba(96,171,76,0.4); */
-  background-color: #ea562062;
+  background-color: #EA552050;
 
   height: 133px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,10 +150,8 @@
 .main .carousel-right-wrap .item > .link:after {
   content: "";
   width: 10px;
-  height: 27px;
-  background-image: url(../images/ico_arrow_right.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  height: 27px;  
+ 
   float: right;
   position: absolute;
   top: 60%;
@@ -183,7 +182,7 @@
 .main .page-header .page-content {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: calc(50% + 60px);
   transform: translate(-50%, -50%);
   width: 100%;
   height: 420px;
@@ -282,9 +281,9 @@
 
 .main .carousel-inner .title {
   color: #fff;
-  font-weight: 300;
-  font-size: 5.667rem;
-  letter-spacing: -1px;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: -0.0083em;
   display: none;
 }
 

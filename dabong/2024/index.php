@@ -8,11 +8,11 @@ include_once("./layout/top.php");
 <div class="section" id="headers">
   <div id="main-visual" class="carousel slide">
     <div class="carousel-inner">
-      <div class="slider-item">
+      <div class="slider-item d-block">
         <div class="page-header header-filter">
           <div class="bg">
             <img
-              src="http://www.cosmecca.com/frontend/assets/images/main/main_visual_01.jpg"
+              src="/dabong/2024/img/banner01.jpg"
             />
           </div>
           <div class="page-content">
@@ -20,14 +20,12 @@ include_once("./layout/top.php");
               <div class="row">
                 <div class="col-md-12 text-left">
                   <h1 class="title">
-                    <div id="tit-01"><span>아름다운 삶에</span></div>
-                    <div id="tit-02"><span>기여하는 </span></div>
-                    <div id="tit-03"><span>글로벌 뷰티시장의 리더</span></div>
+                    <div id="tit-01"><span>언제 어디서나,</span></div>
+                    <div id="tit-03"><span> 당신의 온기를 지킵니다.</span></div>                  
                   </h1>
                   <h4 class="rk-web">
-                    <span
-                      >한국을 넘어 중국, 미국으로, 더넓은 글로벌 무대를 향해
-                      도약합니다.</span
+                    <span class='text-white'
+                      >마이핫 시리즈 등 제품을 연구·개발하여 국내외 판매 중이며, 신제품과 품질 개선에 노력하고 있습니다.</span
                     >
                   </h4>
                 </div>
@@ -74,11 +72,11 @@ include_once("./layout/top.php");
           </div>
         </div>
       </div>
-      <div class="slider-item">
+      <div class="slider-item d-block">
         <div class="page-header header-filter">
           <div class="bg">
             <img
-              src="http://www.cosmecca.com/frontend/assets/images/main/main_visual_02.jpg"
+              src="/dabong/2024/img/banner02.jpg"
             />
           </div>
           <div class="page-content">
@@ -86,14 +84,12 @@ include_once("./layout/top.php");
               <div class="row">
                 <div class="col-md-12 text-left">
                   <h1 class="title">
-                    <div id="tit-01"><span>화장품 트렌드를</span></div>
-                    <div id="tit-02"><span>선도하는 </span></div>
-                    <div id="tit-03"><span>창조적 영감</span></div>
+                    <div id="tit-02"><span>겨울의 한계를 뛰어넘다,</span></div>
+                    <div id="tit-03"><span>평창올림픽이 증명한 따뜻함.</span></div>                   
                   </h1>
                   <h4 class="rk-web">
-                    <span
-                      >모두가 바라던 상상 속 화장품의 구현, 코스메카코리아라면
-                      가능합니다.</span
+                    <span class='text-white'
+                      >다봉산업은 <span class=''>2018 평창동계올림픽 라이선싱 상품 공식 지정업체</span>로써 세계적으로 인정받는 핫팩을 생산합니다.</span
                     >
                   </h4>
                 </div>
@@ -140,11 +136,11 @@ include_once("./layout/top.php");
           </div>
         </div>
       </div>
-      <div class="slider-item">
+      <div class="slider-item d-block">
         <div class="page-header header-filter">
           <div class="bg">
             <img
-              src="http://www.cosmecca.com/frontend/assets/images/main/main_visual_03.jpg"
+              src="/dabong/2024/img/banner03.jpg"
             />
           </div>
           <div class="page-content">
@@ -152,14 +148,12 @@ include_once("./layout/top.php");
               <div class="row">
                 <div class="col-md-12 text-left">
                   <h1 class="title">
-                    <div id="tit-01"><span>기본에 혁신을 더한</span></div>
-                    <div id="tit-02"><span>융복합 코스메틱</span></div>
-                    <div id="tit-03"><span>연구개발의 메카</span></div>
+                    <div id="tit-01"><span>국내 최초 군부대가  </span></div>
+                    <div id="tit-03"><span>선택한, 신뢰의 온기.</span></div>           
                   </h1>
                   <h4 class="rk-web">
-                    <span
-                      >아낌없는 투자와 지속적인 연구개발로 화장품 과학기술
-                      고도화에 앞장섭니다.</span
+                    <span class='text-white'
+                      ><span class=''>60만 국군 장병들이 사용 중인 마이핫 보온대</span>는 각 군 근무지원단을 통해 전군에 보급되고 있습니다.</span
                     >
                   </h4>
                 </div>
@@ -206,83 +200,15 @@ include_once("./layout/top.php");
           </div>
         </div>
       </div>
-      <div class="slider-item">
-        <div class="page-header header-filter">
-          <div class="bg">
-            <img
-              src="http://www.cosmecca.com/frontend/assets/images/main/main_visual_04.jpg"
-            />
-          </div>
-          <div class="page-content">
-            <div class="container-static">
-              <div class="row">
-                <div class="col-md-12 text-left">
-                  <h1 class="title">
-                    <div id="tit-01"><span>글로벌 스탠더드를</span></div>
-                    <div id="tit-02"><span>정립하는</span></div>
-                    <div id="tit-03"><span>스마트 인프라</span></div>
-                  </h1>
-                  <h4 class="rk-web">
-                    <span
-                      >화장품 제조의 미래 기술을 도입한 스마트 팩토리를
-                      실현합니다.</span
-                    >
-                  </h4>
-                </div>
-                <div class="carousel-control">
-                  <a
-                    class="carousel-control-prev"
-                    href="javascript:void(0);"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <i class="material-icons">keyboard_arrow_left</i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="javascript:void(0);"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <i class="material-icons">keyboard_arrow_right</i>
-                    <span class="sr-only">Next</span>
-                  </a>
-                  <div class="carousel-control-loading">
-                    <div class="line"></div>
-                  </div>
-                </div>
-                <div class="carousel-right-wrap">
-                  <div class="item">
-                    <a href="#" class="link brief-popup"
-                      >1대1<br />문의하기</a
-                    >
-                  </div>
-                  <div class="item">
-                    <a href="#" class="link"
-                      >찾아오시는길</a
-                    >
-                  </div>
-                  <div class="item">
-                    <a href="#" class="link">E카탈로그</a>
-                  </div>                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
-    <a href="#develop" class="page-scroll arrow-down"></a>
+    <!-- <a href="#develop" class="page-scroll arrow-down"></a> -->
   </div>
   <!-- End Carousel Card -->
 </div>
 <!-- Start : counting 애니메이션 -->
  <style>
-  #counting-animation {
-    background: url(http://da-bong.com/wp-content/uploads/2020/03/counter_back_myhot.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
+  
 .statistic-timer {
   font-size: 36px !important;
 }
@@ -290,39 +216,50 @@ include_once("./layout/top.php");
     <section id="counting-animation" class="section-wrap counters bg-color">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3 col-xs-6 mb-40">
+          <div class="col-sm-3 col-xs-6 my-3">
             <div class="statistic text-center">
               <span class="statistic-timer" data-from="0" data-to="1124213226"
                 >1124213226</span
               >
-              <h5 class="counter-text">핫팩누적판매량</h5>
+              <h5 class="counter-text">누적판매량</h5>
             </div>
           </div>
 
-          <div class="col-sm-3 col-xs-6 mb-40">
+          <div class="col-sm-3 col-xs-6 my-3">
             <div class="statistic text-center">
               <span class="statistic-timer" data-from="0" data-to="50600467"
                 >50600467</span
               >
               <h5 class="counter-text">전년생산량(2022)</h5>
+              <!--세훈씨, 여기 2022 전년도만 자동화 부탁해요-->
             </div>
           </div>
 
-          <div class="col-sm-3 col-xs-6 mb-40">
+          <!-- <div class="col-sm-3 col-xs-6 my-3">
             <div class="statistic text-center">
               <span class="statistic-timer" data-from="0" data-to="1981"
                 >1981</span
               >
               <h5 class="counter-text">설립연도</h5>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-sm-3 col-xs-6 mb-40">
+          <div class="col-sm-3 col-xs-6 my-3">
             <div class="statistic text-center">
               <span class="statistic-timer" data-from="0" data-to="42"
                 >42</span
               >
+              <!--세훈씨, 여기 1981년도 에서 계산된 자동화 부탁해요-->
               <h5 class="counter-text">업력(년)</h5>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-6 my-3">
+            <div class="statistic text-center">
+              <span class="statistic-timer" data-from="0" data-to="928"
+                >928</span
+              >
+              <!--세훈씨, 여기 1981년도 에서 계산된 자동화 부탁해요-->
+              <h5 class="counter-text">다봉과 함께 한 고객사</h5>
             </div>
           </div>
         </div>

@@ -127,7 +127,7 @@
   background-color: #fff; }
 
 .bg-color {
-  background-color: #ff6a4d; }
+  background-color: #EA5520; }
 
 .white {
   color: #fff; }
@@ -6138,8 +6138,8 @@ input[type="email"].transparent {
     content: "";
     display: block;
     width: 50px;
-    border-bottom: 3px solid #a3a3a3;
-    margin: 2px auto 28px;
+    border-bottom: 5px solid #a3a3a3;
+    margin: 15px auto  23px;
     z-index: 1;
     position: relative; }
 
