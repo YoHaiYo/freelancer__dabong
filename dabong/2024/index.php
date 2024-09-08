@@ -243,11 +243,20 @@ include_once("./layout/top.php");
 
  <!-- End : counting 애니메이션 -->
 
+ 
  <!-- Start : grid menu -->
-  <section id="grid-menu" class="container">
-    <div class="d-flex justify-content-end">
-      <a href="#" class="h2 text-muted">더 보기</a>
-    </div>
+  <section id="grid-menu" class="container dabong-common">
+      <div class="d-flex justify-content-center">
+        <div class="orange-bar"></div>
+      </div>
+
+      <h2>Product</h2>
+      <h3>다봉의 대표 상품을 소개합니다.</h3>
+
+      <div class="d-flex justify-content-center mb-5">
+        <a class="section-btn d-flex align-items-center" href="#none">제품 모두 보기</a>
+      </div>
+
     <div class="d-flex flex-wrap justify-content-center">
       <div class="explain-item position-relative">
         <img
@@ -282,66 +291,7 @@ include_once("./layout/top.php");
  <!-- End : grid menu -->
   
   <!-- 시작 : parter-slide -->
-  <style>
-      #partners-section {
-        padding: 100px 0;
-      }
-      #partners-section .orange-bar {
-        width: 50px;
-        height: 5px;
-        background-color: #ea5520;
-        margin-bottom: 30px;
-      }
-      #partners-section h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-      }
-      #partners-section h3 {
-        text-align: center;
-        font-size: 1.5rem;
-        color: #626262;
-        margin-bottom: 30px;
-      }
-      #partners-section .section-btn {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: bold;
-        border: 1px solid #333;
-        border-radius: 3.5rem;
-        /* width: auto; */
-        padding: 0.5rem 1rem;
-        height: 40px;
-        background-color: #fff;
-        /* margin-bottom: 100px; */
-      }
-      .partner-img {
-        filter: grayscale(100%);
-        opacity: 0.5;
-        transition: 0.5s;
-      }
-      .partner-img:hover {
-        filter: grayscale(0%);
-        opacity: 1;
-      }
-      #partners-section .swiper {
-        position: relative;
-        height: 200px;
-      }
-      #partners-section .swiper-pagination {
-        position: absolute;
-        bottom: 10px;
-      }
-      #partners-section .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        margin: 0 8px;
-      }
-      #partners-section .swiper-pagination-bullet-active {
-        background-color: #ea5520;
-      }
-    </style>
-    <section id="partners-section">
+    <section id="partners-section" class="dabong-common">
       <div class="d-flex justify-content-center">
         <div class="orange-bar"></div>
       </div>
@@ -350,7 +300,7 @@ include_once("./layout/top.php");
       <h3>다봉과 함께 한 제휴사를 소개합니다.</h3>
 
       <div class="d-flex justify-content-center mb-5">
-        <a class="section-btn d-flex align-items-center" href="#">제휴사 모두 보기</a>
+        <a class="section-btn d-flex align-items-center" href="#none">제휴사 모두 보기</a>
       </div>
 
       <!-- 자동롤링 / 센터모드 / 1.8걸침 / 좌우 / 2초마다 / 페이지네이션 / 앞뒤버튼 필요 -->
@@ -434,26 +384,6 @@ include_once("./layout/top.php");
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
-    <script>
-      const partnerSwiper = new Swiper("#partnerSwiper.swiper", {
-        // 자동롤링 2초마다
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-        // 센터모드
-        centeredSlides: true,
-        // 루프반복
-        loop: true,
-        // 슬라이드 개수
-        slidesPerView: 5,
-
-        pagination: {
-          el: "#partners-section .swiper-pagination",
-        },
-      });
-    </script>
 <!-- 끝 : parter-slide -->
 <!--// Contents Area -->
 <?php 

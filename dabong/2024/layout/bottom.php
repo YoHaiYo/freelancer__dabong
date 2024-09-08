@@ -468,6 +468,7 @@
 		<script src="/dabong/2024/js/jquery-dateformat.min.js"></script>
 
 		<script src="/dabong/2024/js/counting-animation.js"></script>	
+		<script src="/dabong/2024/js/parter-slide.js"></script>	
 		<!--	 Common Files	 -->
 		<script src="/dabong/2024/js/common_v2.js"></script>	
 <!-- Page Script Area ( s ) -->

@@ -41,6 +41,8 @@
 		<link href="/dabong/2024/css/slick.css" rel="stylesheet">
 
 		<link href="/dabong/2024/css/counting-animation.css" rel="stylesheet">
+		<link href="/dabong/2024/css/parter-slide.css" rel="stylesheet">
+		<link href="/dabong/2024/css/sshwork.css" rel="stylesheet">
 
 
 		<!-- 테마-베이직 -->
