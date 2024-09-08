@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 const yearsSince1981 = currentYear - 1981 + 1; // 1981는 설립연도임.
 
 // '전년생산량'의 연도 자동화
-document.getElementById("current-year").textContent = currentYear;
+document.getElementById("current-year").textContent = currentYear - 1;
 
 // 업력 자동화
 const yearsCountElement = document.getElementById("years-count");
