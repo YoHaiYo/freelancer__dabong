@@ -2,6 +2,7 @@
 define('_INDEX_', true);
 include_once('./_common.php');
 include_once("./layout/top.php"); 
+include_once("../lib/latest.lib.php"); 
 ?>
 	
    <!-- Contents Area //-->
@@ -243,51 +244,11 @@ include_once("./layout/top.php");
 
  <!-- End : counting 애니메이션 -->
 
- 
+
  <!-- Start : grid menu -->
-  <section id="grid-menu" class="container dabong-common">
-      <div class="d-flex justify-content-center">
-        <div class="orange-bar"></div>
-      </div>
-
-      <h2>Product</h2>
-      <h3>다봉의 대표 상품을 소개합니다.</h3>
-
-      <div class="d-flex justify-content-center mb-5">
-        <a class="section-btn d-flex align-items-center" href="#none">제품 모두 보기</a>
-      </div>
-
-    <div class="d-flex flex-wrap justify-content-center">
-      <div class="explain-item position-relative">
-        <img
-          src="https://mwpdemo25299.mycafe24.com/wp-content/uploads/2023/06/900x600_04.jpg"
-          alt=""
-        />
-        <div class="explain-text position-absolute h2">상품설명</div>
-      </div>
-      <div class="explain-item position-relative">
-        <img
-          src="https://mwpdemo25299.mycafe24.com/wp-content/uploads/2023/06/900x600_04.jpg"
-          alt=""
-        />
-        <div class="explain-text position-absolute h2">상품설명</div>
-      </div>
-      <div class="explain-item position-relative">
-        <img
-          src="https://mwpdemo25299.mycafe24.com/wp-content/uploads/2023/06/900x600_04.jpg"
-          alt=""
-        />
-        <div class="explain-text position-absolute h2">상품설명</div>
-      </div>
-      <div class="explain-item position-relative">
-        <img
-          src="https://mwpdemo25299.mycafe24.com/wp-content/uploads/2023/06/900x600_04.jpg"
-          alt=""
-        />
-        <div class="explain-text position-absolute h2">상품설명</div>
-      </div>
-    </div>
-  </section>
+ <?php
+    echo latest('theme/sshwork_grid_menu', 'brand', 4, 23);	
+    ?>
  <!-- End : grid menu -->
   
   <!-- 시작 : parter-slide -->

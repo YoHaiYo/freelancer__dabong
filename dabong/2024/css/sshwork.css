@@ -46,7 +46,7 @@
   color: white;
   transition: 0.5s;
 }
-#grid-menu .explain-item:hover > img {
+#grid-menu .explain-item:hover > a > img {
   filter: brightness(50%);
 }
 #grid-menu .explain-item:hover .explain-text {
