@@ -469,7 +469,7 @@
 
 		<script src="/dabong/2024/js/counting-animation.js"></script>	
 		<!--	 Common Files	 -->
-		<script src="/dabong/2024/js/common_v1.js"></script>	
+		<script src="/dabong/2024/js/common_v2.js"></script>	
 <!-- Page Script Area ( s ) -->
 <script>
 	$(function(){

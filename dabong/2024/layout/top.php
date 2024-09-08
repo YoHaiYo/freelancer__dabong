@@ -47,7 +47,7 @@
 		<link href="/dabong/2024/css/themeBasic_content__history.css" rel="stylesheet">
 		<!-- 메인 css -->
 		<link href="<?php echo G5_THEME_CSS_URL; ?>/default.css" rel="stylesheet">
-		<link href="/dabong/2024/css/common.css" rel="stylesheet">
+		<link href="/dabong/2024/css/common_v1.css" rel="stylesheet">
 		<?php
 		if(defined('_INDEX_')) { 			
 		echo  '<link href="/dabong/2024/css/main_v2.css" rel="stylesheet">';

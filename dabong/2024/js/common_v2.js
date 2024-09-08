@@ -102,7 +102,7 @@ $(function () {
           "body.submenu-on .navbar .main-nav .navbar-bg",
           0.5,
           { height: 0 },
-          { height: 280, ease: Power2.easeOut },
+          { height: 160, ease: Power2.easeOut },
           "on-step1"
         );
       }
