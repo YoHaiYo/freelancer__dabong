@@ -281,11 +281,39 @@ include_once("./layout/top.php");
   </section>
  <!-- End : grid menu -->
   
-<!-- 시작 : Parter 슬라이드 -->
-<style>
+  <!-- 시작 : parter-slide -->
+  <style>
+      #partners-section {
+        padding: 100px 0;
+      }
+      #partners-section .orange-bar {
+        width: 50px;
+        height: 5px;
+        background-color: #ea5520;
+        margin-bottom: 30px;
+      }
       #partners-section h2 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      #partners-section h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #626262;
+        margin-bottom: 30px;
+      }
+      #partners-section .section-btn {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        border: 1px solid #333;
+        border-radius: 3.5rem;
+        /* width: auto; */
+        padding: 0.5rem 1rem;
+        height: 40px;
+        background-color: #fff;
+        /* margin-bottom: 100px; */
       }
       .partner-img {
         filter: grayscale(100%);
@@ -296,9 +324,35 @@ include_once("./layout/top.php");
         filter: grayscale(0%);
         opacity: 1;
       }
+      #partners-section .swiper {
+        position: relative;
+        height: 200px;
+      }
+      #partners-section .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+      }
+      #partners-section .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 8px;
+      }
+      #partners-section .swiper-pagination-bullet-active {
+        background-color: #ea5520;
+      }
     </style>
-<section id="partners-section">
-      <h2>Partners</h2>
+    <section id="partners-section">
+      <div class="d-flex justify-content-center">
+        <div class="orange-bar"></div>
+      </div>
+
+      <h2>Our Partners</h2>
+      <h3>다봉과 함께 한 제휴사를 소개합니다.</h3>
+
+      <div class="d-flex justify-content-center mb-5">
+        <a class="section-btn d-flex align-items-center" href="#">제휴사 모두 보기</a>
+      </div>
+
       <!-- 자동롤링 / 센터모드 / 1.8걸침 / 좌우 / 2초마다 / 페이지네이션 / 앞뒤버튼 필요 -->
       <div class="swiper" id="partnerSwiper">
         <div class="swiper-wrapper">
@@ -375,6 +429,9 @@ include_once("./layout/top.php");
             </a>
           </div>
         </div>
+
+        <!-- 페이지네이션 -->
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -391,9 +448,13 @@ include_once("./layout/top.php");
         loop: true,
         // 슬라이드 개수
         slidesPerView: 5,
+
+        pagination: {
+          el: "#partners-section .swiper-pagination",
+        },
       });
     </script>
-<!-- 끝 : Parter 슬라이드 -->
+<!-- 끝 : parter-slide -->
 <!--// Contents Area -->
 <?php 
 

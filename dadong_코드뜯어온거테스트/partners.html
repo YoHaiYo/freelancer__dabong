@@ -4,192 +4,188 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <head>
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="http://da-bong.com/wp-content/themes/blaize/js/owl/owl.carousel.min.css?ver=5.9.10"
-    /> -->
-    <!-- <script src="http://da-bong.com/wp-content/themes/blaize/js/owl/owl.carousel.min.js?ver=5.9.10"></script> -->
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- 플러그인-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
-      .blz-partners-slider img {
+      #partners-section .orange-bar {
+        width: 50px;
+        height: 5px;
+        background-color: #ea5520;
+        margin-bottom: 30px;
+      }
+      #partners-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      #partners-section h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #626262;
+        margin-bottom: 30px;
+      }
+      #partners-section .section-btn {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        border: 1px solid #333;
+        border-radius: 3.5rem;
+        /* width: auto; */
+        padding: 0.5rem 1rem;
+        height: 40px;
+        background-color: #fff;
+        margin-bottom: 100px;
+      }
+      .partner-img {
         filter: grayscale(100%);
         opacity: 0.5;
         transition: 0.5s;
       }
-
-      .blz-partners-slider img:hover {
+      .partner-img:hover {
         filter: grayscale(0%);
         opacity: 1;
+      }
+      #partners-section .swiper {
+        position: relative;
+        height: 200px;
+      }
+      #partners-section .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+      }
+      #partners-section .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        margin: 0 10px;
+      }
+      #partners-section .swiper-pagination-bullet-active {
+        background-color: #ea5520;
       }
     </style>
   </head>
   <body>
-    <section class="blz-partners-section home-section clearfix">
-      <div class="blz-container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">Partners</h2>
-        </div>
+    <section id="partners-section">
+      <div class="d-flex justify-content-center">
+        <div class="orange-bar"></div>
+      </div>
 
-        <div class="blz-partners-slider owl-carousel clearfix">
-          <div class="item">
+      <h2>Our Partners</h2>
+      <h3>다봉과 함께 한 제휴사를 소개합니다.</h3>
+
+      <div class="d-flex justify-content-center">
+        <a class="section-btn" href="#">제휴사 모두 보기</a>
+      </div>
+
+      <!-- 자동롤링 / 센터모드 / 1.8걸침 / 좌우 / 2초마다 / 페이지네이션 / 앞뒤버튼 필요 -->
+      <div class="swiper" id="partnerSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/한미약품.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/롯데.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/lg생활건강.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/텐바이텐.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/mhco.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/평창.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/08/우체국.jpg"
               />
             </a>
           </div>
-          <div class="item">
+          <div class="swiper-slide">
             <a href="#">
               <img
-                class="wow zoomInUp animated"
+                class="partner-img"
                 data-wow-duration="2s"
                 src="http://dabong0383.cafe24.com/wp-content/uploads/2018/06/부광약품.jpg"
               />
             </a>
           </div>
         </div>
+
+        <!-- 페이지네이션 -->
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const owlCarousel = document.querySelector(".blz-partners-slider");
+      const partnerSwiper = new Swiper("#partnerSwiper.swiper", {
+        // 자동롤링 2초마다
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        // 센터모드
+        centeredSlides: true,
+        // 루프반복
+        loop: true,
+        // 슬라이드 개수
+        slidesPerView: 5,
 
-        if (owlCarousel) {
-          const owlItems = Array.from(owlCarousel.children); // NodeList를 배열로 변환
-          const itemMargin = 15;
-          let currentIndex = 0;
-          const totalItems = owlItems.length;
-
-          function updateCarousel() {
-            const offset = -(
-              currentIndex *
-              (owlItems[0].offsetWidth + itemMargin)
-            );
-            owlCarousel.style.transform = `translate3d(${offset}px, 0, 0)`;
-            owlCarousel.style.transition = "transform 0.25s ease";
-          }
-
-          function nextSlide() {
-            currentIndex++;
-
-            if (currentIndex >= totalItems) {
-              const firstItem = owlItems.shift(); // 첫 번째 아이템을 배열에서 제거
-              owlCarousel.appendChild(firstItem); // 제거된 아이템을 맨 뒤에 추가
-              owlItems.push(firstItem); // 배열에도 맨 뒤에 추가
-              currentIndex = totalItems - 1; // currentIndex를 마지막 아이템으로 설정
-              owlCarousel.style.transition = "none";
-              updateCarousel(); // 즉시 위치 업데이트
-              setTimeout(() => {
-                owlCarousel.style.transition = "transform 0.25s ease";
-                currentIndex = totalItems - 2;
-                updateCarousel();
-              }, 0);
-            } else {
-              updateCarousel();
-            }
-          }
-
-          function prevSlide() {
-            currentIndex--;
-
-            if (currentIndex < 0) {
-              const lastItem = owlItems.pop(); // 마지막 아이템을 배열에서 제거
-              owlCarousel.insertBefore(lastItem, owlItems[0]); // 제거된 아이템을 맨 앞에 추가
-              owlItems.unshift(lastItem); // 배열에도 맨 앞에 추가
-              currentIndex = 1; // currentIndex를 두 번째 아이템으로 설정
-              owlCarousel.style.transition = "none";
-              updateCarousel(); // 즉시 위치 업데이트
-              setTimeout(() => {
-                owlCarousel.style.transition = "transform 0.25s ease";
-                currentIndex = 0;
-                updateCarousel();
-              }, 0);
-            } else {
-              updateCarousel();
-            }
-          }
-
-          // Initialize carousel styles
-          owlCarousel.style.display = "flex";
-          updateCarousel();
-
-          // Auto-play functionality
-          let autoplay = setInterval(nextSlide, 3000);
-
-          // Pause on mouse enter, resume on mouse leave
-          owlCarousel.addEventListener("mouseenter", function () {
-            clearInterval(autoplay);
-          });
-
-          owlCarousel.addEventListener("mouseleave", function () {
-            autoplay = setInterval(nextSlide, 3000);
-          });
-
-          // Navigation buttons
-          const navPrev = document.querySelector(".owl-prev");
-          const navNext = document.querySelector(".owl-next");
-
-          if (navPrev && navNext) {
-            navPrev.addEventListener("click", prevSlide);
-            navNext.addEventListener("click", nextSlide);
-          }
-        }
+        pagination: {
+          el: "#partners-section .swiper-pagination",
+        },
       });
     </script>
   </body>
