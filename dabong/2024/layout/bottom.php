@@ -1,5 +1,4 @@
 </div>
-	<!-- footer content -->
 		<div class="modal fade brief" id="briefPopup" tabindex="-1" role="dialog" aria-labelledby="briefPopupTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -418,36 +417,65 @@
 				<a href="http://www.cosmecca.com/ko/home#top" class="page-scroll top"><div class="inner"><div class="icon"></div><div class="txt">TOP</div></div></a>
 			</div>
 		</div>
-				<footer class="footer">
-			<div class="container">
-								<div class="row">
-					<div class="menus">
-						<ul>
-							<li><a href="http://www.cosmecca.com/ko/intro">회사소개</a></li>
-							<li><a href="http://www.cosmecca.com/ko/global">오시는길</a></li>
-							<li><a href="http://www.cosmecca.com/ko/privacy">개인정보취급방침</a></li>
-						</ul>
-						
-					</div>
-				</div>
-				<div class="row">
-					<div class="info">
-						<div class="float-left">
-							<div class="company-info">
-								<p style="color: white;">핫팩 제조 공장 : 충청북도 음성군 대소면 초금로 169-13</p>
-								<p style="color: white;">영업본부 : 서울특별시 영등폭두 여의나루로 71 (동화빌딩) 404</p>
-								<p style="color: white;">대표번호 : 1800-8994</p>
-							</div>
-							<div class="copyright">
-								COPYRIGHT ©
-								<strong style="color: white;">DaBong</strong>
-								ALL RIGHTS RESERVED.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>		<!-- /footer content -->
+		<!-- start : footer -->				
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="menus">
+            <ul>
+              <li>
+                <a
+                  href="http://da-bong.com/dabong/bbs/content.php?co_id=company"
+                  >회사소개</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://da-bong.com/dabong/bbs/content.php?co_id=company"
+                  >오시는길</a
+                >
+              </li>
+              <li>
+                <a
+                  class="orange-text"
+                  href="http://da-bong.com/dabong/bbs/group.php?gr_id=product"
+                  >다봉스토어</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="color: #fff" class="py-1" />
+        <div class="row justify-content-between">
+          <div class="info w-auto">
+            <div class="float-left">
+              <div class="company-info">
+                <p style="color: white">
+                  핫팩 제조 공장 : 충청북도 음성군 대소면 초금로 169-13
+                </p>
+                <p style="color: white">
+                  영업본부 : 서울특별시 영등폭두 여의나루로 71 (동화빌딩) 404
+                </p>
+                <p style="color: white">대표번호 : 1800-8994</p>
+              </div>
+              <div class="copyright">
+                COPYRIGHT ©
+                <strong style="color: white">DaBong</strong>
+                ALL RIGHTS RESERVED.
+              </div>
+            </div>
+          </div>
+
+          <img
+            class="d-block"
+            src="/dabong/2024/img/logo_w.png"
+            alt=""
+            style="width: 140px; height: 44px"
+          />
+        </div>
+      </div>
+    </footer>	
+		<!-- end : footer -->
     		<!--	 Core JS Files	 -->
 		<script src="/dabong/2024/js/jquery.min.js"></script>
 		<script src="/dabong/2024/js/popper.min.js"></script>
