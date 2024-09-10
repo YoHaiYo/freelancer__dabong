@@ -8,7 +8,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 
 <!-- 게시판 목록 시작 { -->
-<div id="bo_gall" style="width:<?php echo $width; ?>">
+<div id="bo_gall">
 
     <?php if ($is_category) { ?>
     <nav id="bo_cate">

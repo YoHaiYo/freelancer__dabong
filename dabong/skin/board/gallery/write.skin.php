@@ -124,6 +124,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </div>
         
     </div>
+    <div class="bo_w_link write_div">
+        <label for="wr_1"><span > 해시태그 </span></label>
+        <input type="text" name="wr_1" value="<?php if($w=="u"){ echo $write['wr_1']; } ?>" id="wr_1" class="frm_input full_input" size="50">
+    </div>
+    <div class="bo_w_link write_div">
+        <label for="wr_2"><span > 메인 설명 </span></label>
+        <input type="text" name="wr_2" value="<?php if($w=="u"){ echo $write['wr_2']; } ?>" id="wr_2" class="frm_input full_input" size="50">
+    </div>
 
     <?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
     <div class="bo_w_link write_div">

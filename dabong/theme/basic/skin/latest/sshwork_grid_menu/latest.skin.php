@@ -23,29 +23,42 @@ $thumb_height = 330;
          </a> 
        </div>
 
-      <ul class="d-flex flex-wrap justify-content-center">
+      <ul class="d-flex flex-wrap flex-column flex-md-row  justify-content-center">
     <?php
     for ($i=0; $i<count($list); $i++) {
     $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
 
     if($thumb['src']) {
-        $img = $thumb['src'];
+        $img = $thumb['ori'];
     } else {
         $img = G5_IMG_URL.'/no_img.png';
         $thumb['alt'] = '이미지가 없습니다.';
     }
-    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
+    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" class="w-100 m-0" >';
     ?>
-        <li class="explain-item position-relative">
+        <li class="explain-item position-relative col-md-6 p-3 ">
             <!-- 이미지 -->
-            <a href="<?php echo $list[$i]['href'] ?>" class="">
+            <a href="<?php echo $list[$i]['href'] ?>" class="d-block">
                 <?php echo $img_content; ?>
             </a>
             <!-- 게시글 제목 -->
-            <div class="explain-text position-absolute h2">
-            <?php
-                echo $list[$i]['subject'];
-            ?>
+            <div class="explain-text position-absolute h2 d-flex flex-column justify-content-center align-items-center">
+                
+                <h2 class='mb-3'>
+                    <a href="<?php echo $list[$i]['href'] ?>" class="d-block text-white font32 fw700">
+                        <?php  echo $list[$i]['subject']; ?>
+                    </a>    
+                </h2>
+                <p class='hashtitle mb-2'>
+                    <a href="<?php echo $list[$i]['href'] ?>" class="d-block text-white font24 fw600">
+                        <?php  echo $list[$i]['wr_1']; ?>
+                    </a>
+                </p>
+                <p class='smpl_ex mb-0'>
+                    <a href="<?php echo $list[$i]['href'] ?>" class="d-block text-white font20 fw400">
+                        <?php  echo $list[$i]['wr_2']; ?>
+                    </a>
+                </p>            
             </div>
         </li>
     <?php }  ?>
