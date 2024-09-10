@@ -497,6 +497,7 @@
 
 		<script src="/dabong/2024/js/counting-animation.js"></script>	
 		<script src="/dabong/2024/js/parter-slide.js"></script>	
+		<script src="/dabong/2024/js/navbar.js"></script>	
 		<!--	 Common Files	 -->
 		<script src="/dabong/2024/js/common_v2.js"></script>	
 <!-- Page Script Area ( s ) -->
